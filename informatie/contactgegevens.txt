@@ -1,0 +1,8 @@
+nummer:
+020 523 1822
+
+email:
+info@amsterdammuseum.nl
+
+adres:
+Kalverstraat 92, 1012 PH Amsterdam
