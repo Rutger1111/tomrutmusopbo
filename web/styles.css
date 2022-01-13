@@ -157,3 +157,15 @@ transform: rotate(135deg);
 -webkit-transform: rotate(135deg);
 }
 
+#img{
+    padding-bottom: 2%;
+}
+
+#twee{
+    padding-bottom: 1%;
+}
+
+#derd{
+    min-height: 450px;
+    font-size: 60px;
+}
