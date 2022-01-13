@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentnonsens</title> // tom heeft dit gezet
+    <title>Documentnonsens</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
@@ -30,32 +30,50 @@
 
             <div class="nl">
                 <h1>Amsterdam Museum</h1>
-                <p>dit is het amsterdam Museum. zie en leer hier veel over de geschiedenis van amsterdan en hoe het gegroeid
-                    is</p>
+                <p>Het Amsterdam Museum bevindt zich tussen de Kalverstraat en de Nieuwezijds Voorburgwal. 
+                    De geschiedenis van deze plek gaat terug tot de middeleeuwen, toen hier het Sint-Luciënklooster gevestigd was: een vrouwenklooster met een eigen bierbrouwerij en veestapel.
+                    De stal stond ongeveer op de plek waar nu het museumcafé is. In 1578 besloot de stad dat hier het Burgerweeshuis moest komen. Dat weeshuis, waar meestal honderden kinderen woonden, bleef er bijna vier eeuwen,
+                    tot 1960. Uit deze periode stammen bijvoorbeeld de Regentenkamer en de Wezenkastjes op de binnenplaats.
+                    Sinds 1975 bevindt zich hier het Amsterdam Museum,
+                    dat destijds geopend werd onder de naam Amsterdams Historisch Museum.</p>
             </div>
             <div class="en">
                 <h1>Amsterdam Museum</h1>
-                <p>this is amsterdam museum, see and learn here many things about the history of amsterdam and how it has
-                    grown</p>
+                <p>The Amsterdam Museum is located between Kalverstraat and Nieuwezijds Voorburgwal.
+                    The history of this place goes back to the Middle Ages, when the Sint-Lucienklooster was located here: a women's monastery with its own beer brewery and livestock.
+                    The stable stood approximately where the museum café is now.
+                    In 1578 the city decided that the Burgerweeshuis should be built here.
+                    That orphanage, which usually housed hundreds of children, remained there for almost four centuries, until 1960. The Regentenkamer and the Orphans' boxes in the courtyard, for example, date from this period.
+                    The Amsterdam Museum has been located here since 1975, which at the time was opened under the name Amsterdams Historisch Museum.</p>
             </div>
-            
-
-
+            <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
+            <div class="nl">
+                <h2>waar en hoe ziet het museum eruit</h2>
+                <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.</p>
+                
+            </div>
+            <div class="en">
+                <h2>waaren en hoe ziet het museum eruit</h2>
+                <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.</p>
+                <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
+            </div>
         </article>
         <img id="img" src="http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg">
-        <div class="button" onclick="onClickAmsterdam()">voorwaards</div>
-        <div class="button" onclick="onClickKnakworst()">achterwaards</div>
+        <div id="voords" class="button" onclick="onClickAmsterdam(1, true)"><p><i class="arrow right"></i></p></div>
+        <div id="achters" class="button" onclick="onClickKnakworst()"><p><i class="arrow left"></i></p></div>
         <script>
             var position = 1;
             var img1 = "http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg"
             var img2 = "http://32669.hosts1.ma-cloud.nl/helegoedemusea/x.jpg"
 
 
+            onClickAmsterdam();
+            
             function onClickKnakworst(){
                 var imgElement = document.getElementById("img");
                 position += 1; 
-                if (position == -1){
-                    position = 2
+                if (position == 2){
+                    position = -1;
                 }
                 if (position == 2){
                     position = 1
@@ -73,7 +91,8 @@
 
                 
             }
-            function onClickAmsterdam(){
+            function onClickAmsterdam(ja, running){
+
                 var imgElement = document.getElementById("img");
                 position -= 1; 
                 if (position == -1){
@@ -93,17 +112,29 @@
                     imgElement.src = img3;
                 }
 
+                if (ja != 1){
+                    setTimeout(() => {
+                        running = false
+                        onClickAmsterdam();
+                    }, 30000);
+                }
+                ja = 0;
                 
             }
+               
+                
+            
+            
+
+            
+            
+            
+            
         </script>
 
 
     </article>
-    <article class="art">
-        <h2>waar en hoe ziet het museum eruit</h2>
-        <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.</p>
-        <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
-    </article>
+
 
 
 </body>
