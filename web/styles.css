@@ -14,13 +14,13 @@ article.imgbij{
     margin: auto auto;
     display: block;
     width:50vw;
-    border: 10px rgb(58, 58, 58);
+    border: 1px rgb(58, 58, 58);
     border-style: solid;
     background-color:grey;
     padding:10px;
     margin-top:5%;
     margin-bottom: 5%;
-    border-radius: 5px;
+
     
 }
 article> div.en{
@@ -33,18 +33,18 @@ article> div.en{
 article.en > div.en{
     margin-left: auto auto;
     display:block;
-    border: 10px solid red ;
+    border: 1px solid rgb(0, 17, 255) ;
     border-radius: 5px;
     max-width: 100%;
 }
 article > div.nl{
     display:block;
-    border: 10px solid red ;
+    border: 1px solid rgb(255, 81, 0) ;
     border-radius: 5px;
 }
 article.en > div.nl{
     display:none;
-    border: 20px solid red ;
+    border: 2px solid red ;
     border-radius: 5px;
 }
 
@@ -88,6 +88,72 @@ img{
     border-radius: 3px;
 }
 
+img:hover{
+    transform: scale(1.01);
+    transition: 0.2s transform;
+}
+
 h1{
     padding-bottom: 2%;
+    border: 30px gray;
 }
+
+#voords{
+    display: block;
+    border: solid;
+
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+#achters{
+    display: block;
+    border: solid;
+    
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.arrow:hover{
+    cursor: pointer;
+    border-color: black;
+}
+
+.arrow {
+    border: solid rgb(136, 136, 136);
+    border-width: 0 40px 40px 0;
+    display: inline-block;
+    padding: 40px;
+    
+  }
+  
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+
