@@ -1,0 +1,9 @@
+body{
+    margin-left: 40%;
+    background-color: salmon;
+}
+article{
+    border-style: solid;
+    border-color: chocolate;
+    width: 10%;
+}
