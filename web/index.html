@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentnonsens</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reviews/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
 
@@ -18,11 +18,19 @@
                 $('article').toggleClass("en");
             });
         });
+        $(document).ready(function () {
+            $(".lang-switch").click(function () {
+                $('footer').toggleClass("en");
+            });
+        });
     </script>
 </head>
 
 <body>
 
+    <header>
+        <a href="http://32669.hosts1.ma-cloud.nl/goede%20uitwerking/reviews"><button>reviews</button></a>
+    </header>
 
     <article class="imgbij">
         <article>
@@ -49,13 +57,23 @@
             <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
             <div id="twee" class="nl">
                 <h2>waar en hoe ziet het museum eruit</h2>
-                <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.</p>
+                <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.
+                    dit is de huidige tentoonstelling van het amsterdam museum DE GOUDEN KOETS, 
+                    VRIJDENKERS: VAN SPINOZA TOT NU, 
+                    MODETENTOONSTELLING MAISON AMSTERDAM.
+                </p>
                 
             </div>
             <div id="twee" class="en">
                 <h2>waaren en hoe ziet het museum eruit</h2>
-                <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.</p>
-                <img id="img2" src="mijn_stad_tapijt.jpg" alt="hoi">
+                <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam. 
+                    this is the exhibition for now: 
+                    THE GOLDEN CARRIAGE, 
+                    Freethinkers: FROM SPINOZA TO NOW, 
+                    FASHION EXHIBITION MAISON AMSTERDAM, 
+
+                </p>
+                
             </div>
         </article>
         <img id="img" src="http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg">
@@ -68,6 +86,7 @@
         <div id="derd" class="nl">
             <p>hier komt de interactieve route!</p>
         </div>
+
         <script>
             var position = 1;
             var img1 = "http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg"
@@ -141,6 +160,24 @@
 
 
     </article>
+    
+    <footer>
+        
+        <p>
+            openingstijden:
+            Elke dag van 10:00 tot 17:00
+            contact gegevens:
+            nummer:
+            020 523 1822
+            
+            email:
+            info@amsterdammuseum.nl
+            
+            adres:
+            Kalverstraat 92, 1012 PH Amsterdam
+        </p>
+        
+    </footer>
 
 
 
