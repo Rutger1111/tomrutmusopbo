@@ -9,7 +9,16 @@ body{
     height: 100%;
     max-width: 100%;
 }
-
+header, footer{
+    background-color: gray;
+    color: white;
+    height: 150px;
+    font-size: 200%;
+    width: 98vw;
+}
+#reviews{
+    padding-bottom: 2%;
+}
 article.imgbij{
     margin: auto auto;
     display: block;
@@ -168,4 +177,35 @@ transform: rotate(135deg);
 #derd{
     min-height: 450px;
     font-size: 60px;
+}
+footer >.en div.en{
+    display: none;
+    display: flex;
+    align-items: center;
+    width: 98vw;
+}
+footer > div.nl{
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 98vw;
+}
+footer > div.en{
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 98vw;
+}
+footer.en > div.nl{
+    display: none;
+    display: flex;
+    align-items: center;
+    width: 98vw;
+}
+footer > p:last-of-type{
+    color: black;
+    width: 60vw;
+    margin: 0 auto;
+    
+    padding-left: 40px;
 }
