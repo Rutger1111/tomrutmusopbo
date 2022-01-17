@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentnonsens</title>
+    <title>Headeer Responsive</title>
     <link rel="stylesheet" href="reviews/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
@@ -29,7 +29,7 @@
 <body>
 
     <header>
-        <a href="http://32669.hosts1.ma-cloud.nl/goede%20uitwerking/reviews"><button>reviews</button></a>
+        <a href="http://32669.hosts1.ma-cloud.nl/museum/reviews"><button id="butooo" >reviews</button></a>
     </header>
 
     <article class="imgbij">
@@ -54,7 +54,12 @@
                     That orphanage, which usually housed hundreds of children, remained there for almost four centuries, until 1960. The Regentenkamer and the Orphans' boxes in the courtyard, for example, date from this period.
                     The Amsterdam Museum has been located here since 1975, which at the time was opened under the name Amsterdams Historisch Museum.</p>
             </div>
-            <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
+            <div id="imgButtons">
+
+            </div>
+                <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
+                <div id="voords" class="button" onclick="onClickAmsterdam(1, true)"><p><i class="arrow right"></i></p></div>
+                <div id="achters" class="button" onclick="onClickKnakworst()"><p><i class="arrow left"></i></p></div>
             <div id="twee" class="nl">
                 <h2>waar en hoe ziet het museum eruit</h2>
                 <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.
@@ -65,7 +70,7 @@
                 
             </div>
             <div id="twee" class="en">
-                <h2>waaren en hoe ziet het museum eruit</h2>
+                <h2>where and how does it look</h2>
                 <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam. 
                     this is the exhibition for now: 
                     THE GOLDEN CARRIAGE, 
@@ -77,8 +82,7 @@
             </div>
         </article>
         <img id="img" src="http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg">
-        <div id="voords" class="button" onclick="onClickAmsterdam(1, true)"><p><i class="arrow right"></i></p></div>
-        <div id="achters" class="button" onclick="onClickKnakworst()"><p><i class="arrow left"></i></p></div>
+
             
         <div id="derd" class="en">
             <p>here comes the interactive route!</p>
@@ -90,19 +94,21 @@
         <script>
             var position = 1;
             var img1 = "http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg"
-            var img2 = "http://32669.hosts1.ma-cloud.nl/helegoedemusea/x.jpg"
-
+            var img2 = "foto's/foto1.jfif"
+            var img3 = "foto's/foto2.jfif"
+            var img4 = "foto's/foto3.jfif"            
+            var img5 = "foto's/foto4.jfif"         
 
             onClickAmsterdam();
             
             function onClickKnakworst(){
                 var imgElement = document.getElementById("img");
                 position += 1; 
-                if (position == 2){
+                if (position == 6){
                     position = -1;
                 }
-                if (position == 2){
-                    position = 1
+                if (position == 6){
+                    position = 5
                 }
 
                 if (position == 0){
@@ -114,6 +120,16 @@
                 if (position == 2){
                     imgElement.src = img3;
                 }
+                if (position == 3){
+                    imgElement.src = img4;
+                }
+                if (position == 4){
+                    imgElement.src = img5;
+                }
+                if (position == 5){
+                    imgElement.src = img6;
+                }
+                
 
                 
             }
@@ -122,10 +138,10 @@
                 var imgElement = document.getElementById("img");
                 position -= 1; 
                 if (position == -1){
-                    position = 2
+                    position = 5
                 }
-                if (position == 2){
-                    position = 1
+                if (position == 6){
+                    position = 0
                 }
 
                 if (position == 0){
@@ -135,6 +151,15 @@
                     imgElement.src = img2;
                 }
                 if (position == 2){
+                    imgElement.src = img3;
+                }
+                if (position == 3){
+                    imgElement.src = img1;
+                }
+                if (position == 4){
+                    imgElement.src = img2;
+                }
+                if (position == 5){
                     imgElement.src = img3;
                 }
 
