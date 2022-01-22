@@ -11,10 +11,30 @@ body{
 }
 header, footer{
     background-color: gray;
-    color: white;
+    color: black;
     height: 150px;
-    font-size: 200%;
-    width: 98vw;
+    font-size: 2vw;
+    width: 50vw;
+    margin: auto auto;
+}
+header{
+    width: 50vw;
+    text-align: left;
+    margin: auto auto;
+    margin-top: 5%;
+    height: 5vw;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+#butooo{
+    height: 5vw;
+    border: 1px rgb(58, 58, 58);
+    margin-left: 0vw;
+    width: 50%;
+    height: 100%;
+
 }
 #reviews{
     padding-bottom: 2%;
@@ -27,7 +47,7 @@ article.imgbij{
     border-style: solid;
     background-color:grey;
     padding:10px;
-    margin-top:5%;
+    margin-top:0%;
     margin-bottom: 5%;
 
     
@@ -64,16 +84,23 @@ img{
     
 }
 .lang-switch{
-    background-color: yellow;
+    display: inline-block;
+    background-color: rgb (184, 184, 184)llow;
     border-style: solid;
     border: red;
     cursor: pointer;
-    margin-left: 70%;
     border-radius: 3px;
+    width: 50%;
+    height: 100%;
+    margin-left: 50;
+    float: right;
+    border-left: solid;
+
     
+
 }
 button{
-    background-color: yellow;
+    background-color: rgb(184, 184, 184);
     border-style: solid;
     border: red;
     cursor: pointer;
@@ -102,18 +129,22 @@ img:hover{
     transition: 0.2s transform;
 }
 
+img{
+    padding-top: 2%;
+}
+
 h1{
     padding-bottom: 2%;
     border: 30px gray;
 }
 
 #voords{
-    display: block;
+    display: flex;
     border: solid;
 
     position: absolute;
-    top: 50%;
-    left: 80%;
+    margin-top: -25vh;
+    left: 70vw;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 
@@ -123,47 +154,74 @@ h1{
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    align-items: center;
+    
     
 }
+#voords.button{
+    display: flex;
+    height: 40px;
+    width: 10%;
+    opacity: 0.5;
+    align-items: center;
+    background-color: blue;
+}
+
 #achters{
     display: block;
     border: solid;
     
     position: absolute;
-    top: 50%;
-    left: 20%;
+    margin-top: -25vh;
+    left: 30vw;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     
     color: white;
-    font-size: 16px;
+    font-size: 1.6vw;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     
 }
+#achters.button{
+    display: flex;
+    height: 40px;
+    width: 10%;
+    opacity: 0.5;
+    align-items: center;
+    background-color: blue;
+}
+#voords.button:hover{
+    opacity: 0.6;
+    background-color: red;
+}
+#achters.button:hover{
+    opacity: 0.6;
+    background-color: red;
+}
 .arrow:hover{
     cursor: pointer;
-    border-color: black;
+    border-color: red;
+    background-color: blue;
 }
 
 .arrow {
-    border: solid rgb(136, 136, 136);
-    border-width: 0 40px 40px 0;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 40px;
-    
-  }
+    padding: 4px; 
+}
   
 .right {
-transform: rotate(-45deg);
--webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 .left {
-transform: rotate(135deg);
--webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
 
 #img{
@@ -178,34 +236,63 @@ transform: rotate(135deg);
     min-height: 450px;
     font-size: 60px;
 }
-footer >.en div.en{
-    display: none;
-    display: flex;
-    align-items: center;
-    width: 98vw;
+footer> div.en{
+    display:none;
+    border: 0px solid red ;
+    border-radius: 5px;
+    
+}
+
+footer.en > div.en{
+    margin-left: auto auto;
+    display:block;
+    border: 1px solid rgb(0, 17, 255) ;
+    border-radius: 5px;
+    max-width: 100%;
 }
 footer > div.nl{
-    display: block;
-    display: flex;
-    align-items: center;
-    width: 98vw;
-}
-footer > div.en{
-    display: block;
-    display: flex;
-    align-items: center;
-    width: 98vw;
+    display:block;
+    border: 1px solid rgb(255, 81, 0) ;
+    border-radius: 5px;
 }
 footer.en > div.nl{
-    display: none;
+    display:none;
+    border: 2px solid red ;
+    border-radius: 5px;
+
+}
+footer,footer.en{
+    margin-top: -5%;
+    margin-bottom: 5vh;
+}
+div.en, div.nl{
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+#button1, #button2{
+    text-decoration: none;
     display: flex;
+    width: 11vw;
+    height: 5.5vh;
+    background-color: rgb(228, 228, 20);
+    border-radius: 2vw;
     align-items: center;
-    width: 98vw;
+    justify-content: center;
+    font-size: 1vw;
+    position: fixed;
+    bottom: 120px;
+    right: 120px;
+} 
+#button1:hover{
+    background-color: rgb(255, 255, 0);
 }
+
 footer > p:last-of-type{
-    color: black;
-    width: 60vw;
-    margin: 0 auto;
-    
-    padding-left: 40px;
+    width: 50vw;
+    text-align: center;
+    margin: auto auto;
+    margin-top: -9.9%;
+    padding-bottom: 15%;
 }
+
