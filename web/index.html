@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -30,11 +30,12 @@
 
     <header>
         <a href="http://32669.hosts1.ma-cloud.nl/museum/reviews"><button id="butooo" >reviews</button></a>
+        <button class="lang-switch" onclick="onClickAmsterdam(1, true)">kies taal nl/en</button>
     </header>
 
     <article class="imgbij">
         <article>
-            <button class="lang-switch">kies taal nl/en</button>
+            
 
             <div class="nl">
                 <h1>Amsterdam Museum</h1>
@@ -58,8 +59,8 @@
 
             </div>
                 <img id="img" src="mijn_stad_tapijt.jpg" alt="hoi">
-                <div id="voords" class="button" onclick="onClickAmsterdam(1, true)"><p><i class="arrow right"></i></p></div>
-                <div id="achters" class="button" onclick="onClickKnakworst()"><p><i class="arrow left"></i></p></div>
+                <div id="voords" class="button" onclick="onClickAmsterdam(1, true)"><p>&#10095;</p></div>
+                <div id="achters" class="button" onclick="onClickKnakworst()"><p>&#10094;</p></div>
             <div id="twee" class="nl">
                 <h2>waar en hoe ziet het museum eruit</h2>
                 <p>het amsterdam museum zit in amsterdam en heeft veel dingen over de geschiedenis van amsterdam.
@@ -67,7 +68,7 @@
                     VRIJDENKERS: VAN SPINOZA TOT NU, 
                     MODETENTOONSTELLING MAISON AMSTERDAM.
                 </p>
-                
+                <a href="https://www.amsterdammuseum.nl/bezoek/plan-je-bezoek" id="button1">koop nu jouw kaartjes</a>
             </div>
             <div id="twee" class="en">
                 <h2>where and how does it look</h2>
@@ -75,11 +76,12 @@
                     this is the exhibition for now: 
                     THE GOLDEN CARRIAGE, 
                     Freethinkers: FROM SPINOZA TO NOW, 
-                    FASHION EXHIBITION MAISON AMSTERDAM, 
+                    FASHION EXHIBITION MAISON AMSTERDAM,  
 
                 </p>
-                
+                <a href="https://www.amsterdammuseum.nl/bezoek/plan-je-bezoek" id="button2">buy your tickets now!</a>
             </div>
+            
         </article>
         <img id="img" src="http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg">
 
@@ -90,7 +92,7 @@
         <div id="derd" class="nl">
             <p>hier komt de interactieve route!</p>
         </div>
-
+        <script lang="text/javascript" type="module" src = musea.js></script>
         <script>
             var position = 1;
             var img1 = "http://32669.hosts1.ma-cloud.nl/helegoedemusea/mijn_stad_tapijt.jpg"
@@ -98,6 +100,8 @@
             var img3 = "foto's/foto2.jfif"
             var img4 = "foto's/foto3.jfif"            
             var img5 = "foto's/foto4.jfif"         
+            
+
 
             onClickAmsterdam();
             
@@ -186,23 +190,41 @@
 
     </article>
     
-    <footer>
+    <footer class="">
         
-        <p>
-            openingstijden:
-            Elke dag van 10:00 tot 17:00
-            contact gegevens:
-            nummer:
-            020 523 1822
-            
-            email:
-            info@amsterdammuseum.nl
-            
-            adres:
-            Kalverstraat 92, 1012 PH Amsterdam
-        </p>
+        <div class="nl">
+            <p>
+                openingstijden:
+                Elke dag van 10:00 tot 17:00
+                contact gegevens:
+                nummer:
+                020 523 1822
+                
+                email:
+                info@amsterdammuseum.nl
+                
+                adres:
+                Kalverstraat 92, 1012 PH Amsterdam
+            </p>
+        </div>
+        <div class="en">
+            <p>
+                openingstijden:
+                Elke dag van 10:00 tot 17:00
+                contact gegevens:
+                nummer:
+                020 523 1822
+                
+                email:
+                info@amsterdammuseum.nl
+                
+                adres:
+                Kalverstraat 92, 1012 PH Amsterdams
+            </p>
+        </div>
         
     </footer>
+
 
 
 
