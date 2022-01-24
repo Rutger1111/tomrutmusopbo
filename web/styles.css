@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -9,7 +10,7 @@ body{
     height: 100%;
     max-width: 100%;
 }
-header > nav, footer{
+header, footer{
     background-color: gray;
     color: black;
     height: 150px;
@@ -17,7 +18,7 @@ header > nav, footer{
     width: 50vw;
     margin: auto auto;
 }
-header > nav{
+header{
     width: 50vw;
     text-align: left;
     margin: auto auto;
@@ -27,6 +28,12 @@ header > nav{
     border-width: 1px;
     
 }
+
+#h15{
+    width: 70.3vw;
+    border: solid 3px;
+}
+
 
 #butooo{
     height: 5vw;
@@ -251,19 +258,14 @@ footer.en > div.en{
     max-width: 100%;
 }
 footer > div.nl{
-    display:flex;
+    display:block;
     border: 1px solid rgb(255, 81, 0) ;
     border-radius: 5px;
-    border: solid;
-    padding: 1%;
-    font-size: 45%;
-    justify-content: center;
 }
 footer.en > div.nl{
     display:none;
     border: 2px solid red ;
     border-radius: 5px;
-    border: solid;
 
 }
 footer,footer.en{
@@ -299,5 +301,49 @@ footer > p:last-of-type{
     margin: auto auto;
     margin-top: -9.9%;
     padding-bottom: 15%;
+}
+
+#container{
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+    background-color: gray;
+}
+
+#myInteraction{
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+#mapImage {
+    margin-top: 20px;
+}
+
+#knopNoord, #knopZuid, #knopWest, #knopOost {
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border:solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#knopNoord, #knopZuid {
+    display: block;
+    width: 300px;
+}
+
+#knopWest, #knopOost{
+    display: inline-block;
+    width: 150px;
 }
 
