@@ -304,8 +304,8 @@ footer > p:last-of-type{
 }
 
 #container{
-    width: 900px;
-    height: 600px;
+    width: 70.3vw;
+    height: 60vw;
     margin: 50px auto auto auto;
     margin-top: 0px;
     display: grid;
