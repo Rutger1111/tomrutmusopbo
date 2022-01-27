@@ -18,7 +18,29 @@ header, footer{
     width: 50vw;
     margin: auto auto;
 }
-header{
+header > nav, footer{
+    background-color: gray;
+    color: black;
+    height: 150px;
+    font-size: 2vw;
+    width: 50vw;
+    margin: auto auto;
+}
+
+header > nav.en{
+    display: none;
+}
+
+header.en > nav.en{
+    display: block;
+}
+header > nav.nl{
+    display: block;
+}
+header.en > nav.nl{
+    display: none;
+}
+header > nav{
     width: 50vw;
     text-align: left;
     margin: auto auto;
@@ -26,8 +48,53 @@ header{
     height: 5vw;
     border-style: solid;
     border-width: 1px;
-    
+
 }
+header > nav, footer{
+    background-color: gray;
+    color: black;
+    height: 150px;
+    font-size: 2vw;
+    width: 50vw;
+    margin: auto auto;
+}
+
+header > nav.en{
+    display: none;
+}
+
+header.en > nav.en{
+    display: block;
+}
+header > nav.nl{
+    display: block;
+}
+header.en > nav.nl{
+    display: none;
+}
+header > nav{
+    width: 50vw;
+    text-align: left;
+    margin: auto auto;
+    margin-top: 5%;
+    height: 5vw;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.lang-switch{
+    background-color: rgb(184, 184, 184);
+    border-style: solid;
+    border: red;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 33.3%;
+    height: 100%;
+    border-left: solid;
+    padding-left: 0%;
+}
+
 
 #h15{
     width: 70.3vw;

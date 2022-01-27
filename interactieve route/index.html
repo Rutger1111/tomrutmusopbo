@@ -6,10 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>amsterdam museam interactieve route</title>
     <link rel="stylesheet" href="style.css">
-
+    <script>
+        $(document).ready(function () {
+            $(".lang-switch").click(function () {
+                $('article').toggleClass("en");
+            });
+        });
+        $(document).ready(function () {
+            $(".lang-switch").click(function () {
+                $('footer').toggleClass("en");
+            });
+        });
+        $(document).ready(function () {
+            $(".lang-switch").click(function () {
+                $('header').toggleClass("en");
+            });
+        });
+    </script>
 </head>
 <body>
-    <header id="h15">h</header>
+    <nav class="nl">
+        <a href="http://32669.hosts1.ma-cloud.nl/museum/reviews%22%3E<button id="butooo" >reviews</button></a>
+        <button class="lang-switch" onclick="onClickAmsterdam(1, true)">kies taal nl/en</button>
+        <a href="http://32755.hosts1.ma-cloud.nl/Bo/interactieve%20route/%22%3E<button class="ineract">Ineteractieve route</button></a>
+    </nav>
+
+    <nav class="en">
+        <a href="http://32669.hosts1.ma-cloud.nl/museum/reviews%22%3E<button id="butooo" >reviews</button></a>
+        <button class="lang-switch" onclick="onClickAmsterdam(1, true)">choose languige nl/en</button>
+        <a href="http://32755.hosts1.ma-cloud.nl/Bo/interactieve%20route/%22%3E<button class="ineract">Interactive route</button></a>
+    </nav>
     <div id="container">
         <img id="myImage" src="img/0.jpg" height="600px" alt="foto sb">
         <div id="myInteraction">
@@ -24,5 +50,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>
