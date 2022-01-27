@@ -23,15 +23,28 @@
                 $('footer').toggleClass("en");
             });
         });
+        $(document).ready(function () {
+            $(".lang-switch").click(function () {
+                $('header').toggleClass("en");
+            });
+        });
     </script>
 </head>
 
 <body>
 
-    <header>
-        <nav>
+    <header class="">
+
+        <nav class="nl">
             <a href="http://32669.hosts1.ma-cloud.nl/museum/reviews"><button id="butooo" >reviews</button></a>
             <button class="lang-switch" onclick="onClickAmsterdam(1, true)">kies taal nl/en</button>
+            <a href="http://32755.hosts1.ma-cloud.nl/Bo/interactieve%20route/"><button class="ineract">Ineteractieve route</button></a>
+        </nav>
+
+        <nav class="en">
+            <a href="http://32669.hosts1.ma-cloud.nl/museum/reviews"><button id="butooo" >reviews</button></a>
+            <button class="lang-switch" onclick="onClickAmsterdam(1, true)">kies taal nl/en</button>
+            <a href="http://32755.hosts1.ma-cloud.nl/Bo/interactieve%20route/"><button class="ineract">Ineteractieve route</button></a>
         </nav>
 
     </header>
@@ -197,15 +210,18 @@
         
         <div class="nl">
             <p>
+                
                 openingstijden:
                 Elke dag van 10:00 tot 17:00
                 contact gegevens:
                 nummer:
                 020 523 1822
-                
+            </p>
+            <p>
                 email:
                 info@amsterdammuseum.nl
-                
+            </p>
+            <p>
                 adres:
                 Kalverstraat 92, 1012 PH Amsterdam
             </p>
